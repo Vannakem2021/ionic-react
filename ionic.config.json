@@ -1,0 +1,7 @@
+{
+  "name": "opus-banking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
