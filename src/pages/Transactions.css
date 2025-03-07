@@ -1,0 +1,144 @@
+/* Transactions Page Styles */
+ion-content {
+  --background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: white;
+  --border-style: none;
+}
+
+ion-header {
+  background: transparent;
+}
+
+ion-header::after {
+  display: none;
+}
+
+ion-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ion-back-button {
+  --color: white;
+}
+
+/* Search Bar */
+.search-container {
+  padding: 15px;
+}
+
+.transaction-search {
+  --background: rgba(255, 255, 255, 0.1);
+  --border-radius: 12px;
+  --box-shadow: none;
+  --color: white;
+  --placeholder-color: rgba(255, 255, 255, 0.5);
+  --icon-color: rgba(255, 255, 255, 0.7);
+  --clear-button-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Segment Filter */
+.transaction-segment {
+  background: transparent;
+  padding: 0 15px 15px;
+  --background: transparent;
+}
+
+ion-segment-button {
+  --background: transparent;
+  --background-checked: rgba(255, 255, 255, 0.1);
+  --color: rgba(255, 255, 255, 0.6);
+  --color-checked: white;
+  --indicator-color: transparent;
+  border-radius: 8px;
+  margin: 0 2px;
+  min-height: 36px;
+}
+
+/* Transaction List */
+.transaction-list-container {
+  padding: 0 15px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transaction-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.transaction-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.transaction-amount {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.amount-positive {
+  color: #4cd964;
+}
+
+.amount-negative {
+  color: #ff5c5c;
+}
+
+.transaction-category {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+}
+
+.no-transactions {
+  text-align: center;
+  padding: 30px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .transaction-title {
+    font-size: 14px;
+  }
+  
+  .transaction-amount {
+    font-size: 14px;
+  }
+}

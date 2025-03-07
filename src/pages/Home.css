@@ -1,0 +1,412 @@
+/* Home Page Styles */
+ion-content {
+  --background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: white;
+  --border-style: none;
+}
+
+ion-header {
+  background: transparent;
+}
+
+ion-header::after {
+  display: none;
+}
+
+ion-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ion-back-button {
+  --color: white;
+}
+
+/* Current Balance Section */
+.current-balance {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.balance-label {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.balance-amount-large {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Account Cards Container */
+.account-cards-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+.account-cards-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+/* Account Card */
+.account-card {
+  flex: 0 0 80%;
+  margin: 0 15px;
+  border-radius: 16px;
+  scroll-snap-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 300ms;
+  background: linear-gradient(135deg, #0f4c81 0%, #1a6baa 100%);
+  color: white;
+  border: none;
+}
+
+.account-card:first-child {
+  margin-left: calc((100% - 80%) / 2);
+}
+
+.account-card:last-child {
+  margin-right: calc((100% - 80%) / 2);
+}
+
+.account-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Header and Content */
+ion-card-header {
+  padding: 20px 20px 10px;
+}
+
+ion-card-subtitle {
+  --color: rgba(255, 255, 255, 0.7);
+  text-transform: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+ion-card-title {
+  --color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+ion-card-content {
+  padding: 0 20px 20px;
+}
+
+/* Contactless Icon */
+.contactless-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+}
+
+/* Expiry Date */
+.expiry-date {
+  display: flex;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.expiry-label {
+  opacity: 0.7;
+  margin-right: 10px;
+}
+
+.expiry-value {
+  font-weight: 600;
+}
+
+/* Carousel Indicator */
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.indicator-dot.active {
+  background-color: white;
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* Banking Services Section */
+.banking-services-section {
+  padding: 0 20px 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 16px 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.service-item:active {
+  transform: scale(0.95);
+}
+
+.service-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #1a6baa;
+  margin-bottom: 10px;
+}
+
+.service-icon {
+  font-size: 22px;
+  color: white;
+}
+
+.service-title {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Transactions Section */
+.transactions-section {
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transactions-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.view-all-link {
+  color: #6c7bff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Transaction Item */
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transaction-icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.transaction-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.transaction-amount {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.amount-negative {
+  color: #ff5c5c;
+}
+
+.amount-positive {
+  color: #4cd964;
+}
+
+.transaction-category {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .account-card {
+    min-height: 180px;
+  }
+  
+  .balance-amount-large {
+    font-size: 28px;
+  }
+  
+  .transaction-name {
+    font-size: 14px;
+  }
+  
+  .transaction-amount {
+    font-size: 14px;
+  }
+}
+
+/* Animation for card transition */
+@keyframes cardPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.account-card.active {
+  animation: cardPulse 0.5s ease-in-out;
+}
+
+/* Promotion Card */
+.promo-container {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.promo-card {
+  margin: 0;
+  background: linear-gradient(135deg, #4a5eff 0%, #6c7bff 100%);
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(74, 94, 255, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+.promo-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.promo-text {
+  flex: 1;
+}
+
+.promo-title {
+  font-size: 1rem;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+.promo-subtitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.apply-now-btn {
+  --background: rgba(255, 255, 255, 0.2);
+  --border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  --box-shadow: none;
+  height: 36px;
+  text-transform: capitalize;
+}
+
+.promo-details {
+  font-size: 0.9rem;
+  text-align: right;
+  margin-left: 15px;
+  opacity: 0.9;
+  font-weight: 500;
+  line-height: 1.4;
+}
